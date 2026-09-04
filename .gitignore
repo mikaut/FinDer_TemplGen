@@ -130,3 +130,6 @@ dmypy.json
 
 # New Zealand Community Fault Model
 make_fault_specific/NZ_CFM_v1_0_Tsurf/
+
+# Mac stuff
+.DS_Store

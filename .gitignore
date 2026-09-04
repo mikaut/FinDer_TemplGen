@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# New Zealand Community Fault Model
+make_fault_specific/NZ_CFM_v1_0_Tsurf/

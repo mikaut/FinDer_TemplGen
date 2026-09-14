@@ -136,5 +136,5 @@ make_fault_specific/NZ_CFM_v1_0_Tsurf/
 make_fault_specific/.DS_Store
 
 # Output
-make_fault_specific/event_xml/
+make_fault_specific/event_xmls/
 *.png

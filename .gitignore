@@ -129,4 +129,8 @@ dmypy.json
 .pyre/
 
 # Mika's folders and files
-NZ_CFM_v1_0_Tsurf/
+make_fault_specific/NZ_CFM_v1_0_Tsurf/
+
+# Mac
+.DS_Store
+make_fault_specific/.DS_Store

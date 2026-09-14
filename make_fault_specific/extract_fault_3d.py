@@ -38,7 +38,7 @@ def scaling_relations_rev(area):
 # Work on NZ CFM Jen 2025
 ################################################
 
-indir = 'Tsurf_individual'
+indir = 'NZ_CFM_v1_0_Tsurf/Tsurf_individual'
 name = 'hikurangi'
 prefix = 'hik'
 bPlot = False

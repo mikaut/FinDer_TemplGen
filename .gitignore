@@ -134,3 +134,7 @@ make_fault_specific/NZ_CFM_v1_0_Tsurf/
 # Mac
 .DS_Store
 make_fault_specific/.DS_Store
+
+# Output
+event_xml/
+*.png

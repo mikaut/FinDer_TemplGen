@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://opengis.net">
+  <Placemark>
+    <name>New Zealand Bounding Box</name>
+    <Polygon>
+      <outerBoundaryIs>
+        <LinearRing>
+          <coordinates>
+            166.0,-47.5,0
+            179.0,-47.5,0
+            179.0,-34.0,0
+            166.0,-34.0,0
+            166.0,-47.5,0
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+</kml>

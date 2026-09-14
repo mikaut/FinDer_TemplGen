@@ -35,7 +35,7 @@ def vs30_mesh(prefix, lats, lons):
     '''
     poly = getNZborder()
     # Grid vs30 data
-    gdf = pd.read_csv(f'{os.path.dirname(os.path.abspath(__file__))}/sites/National_grid_1km.csv')
+    gdf = pd.read_csv(f'{os.path.dirname(os.path.abspath(__file__))}/National_grid_1km.csv')
     # Create the output file
     with open(f'{prefix}_sites.csv', 'w') as fout:
         fout.write('lon,lat,vs30,z1pt0,z2pt5,vs30measured,backarc\n')

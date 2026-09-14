@@ -130,6 +130,7 @@ dmypy.json
 
 # Mika's folders and files
 make_fault_specific/NZ_CFM_v1_0_Tsurf/
+make_fault_specific/png/
 
 # Mac
 .DS_Store

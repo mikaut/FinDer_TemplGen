@@ -50,8 +50,10 @@ def vs30_mesh(prefix, lats, lons):
                     z2pt5 = site.iloc[0]['Z2pt5']
                 else:
                     vs30 = 760.
-                    z1pt0 = -1.
-                    z2pt5 = -1.
+                    z1pt0 = -999. # Required by OpenQuake 3.24, MT
+                    z2pt5 = -999. # Required by OpenQuake 3.24, MT
+                    # z1pt0 = -1.
+                    # z2pt5 = -1.
                 ostr = f"{lon},{lat},{vs30},{z1pt0},{z2pt5},False,False\n"
                 fout.write(ostr)
     return

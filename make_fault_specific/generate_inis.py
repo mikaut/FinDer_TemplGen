@@ -55,7 +55,7 @@ if __name__ == "__main__":
     # Fault-specific templates
     file_dict = {
             'inst': 'subduction',
-            'gsim_logic_tree_file': '../../NZ_NSHM_GMM_av_subduction.xml',
+            'gsim_logic_tree_file': '../../make_fault_specific/NZ_NSHM_GMM_av_subduction.xml',
     }
 
 

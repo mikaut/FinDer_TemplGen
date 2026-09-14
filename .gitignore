@@ -131,6 +131,7 @@ dmypy.json
 # Mika's folders and files
 make_fault_specific/NZ_CFM_v1_0_Tsurf/
 make_fault_specific/png/
+make_fault_specific/csv/
 
 # Mac
 .DS_Store
@@ -139,3 +140,4 @@ make_fault_specific/.DS_Store
 # Output
 make_fault_specific/event_xmls/
 *.png
+*.csv

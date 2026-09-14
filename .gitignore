@@ -140,4 +140,4 @@ make_fault_specific/.DS_Store
 # Output
 make_fault_specific/event_xmls/
 *.png
-*.csv
+make_fault_specific/site_meshes/

@@ -142,3 +142,4 @@ make_fault_specific/event_xmls/
 *.png
 make_fault_specific/site_meshes/
 tsets.dat
+make_fault_specific/event_inis/

@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Mika's folders and files
+NZ_CFM_v1_0_Tsurf/

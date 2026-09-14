@@ -25,36 +25,36 @@ def getNZborder():
             poly = rec.geometry
     return poly
 
-# def vs30_mesh(prefix, lats, lons):
-#     '''
-#     For the input lats and lons, find the vs30 and write the site file
-#     Args:
-#     - prefix: prefix to file name
-#     - lats: latitudes
-#     - lons: longitudes
-#     '''
-#     poly = getNZborder()
-#     # Grid vs30 data
-#     gdf = pd.read_csv(f'{os.path.dirname(os.path.abspath(__file__))}/sites/National_grid_1km.csv')
-#     # Create the output file
-#     with open(f'{prefix}_sites.csv', 'w') as fout:
-#         fout.write('lon,lat,vs30,z1pt0,z2pt5,vs30measured,backarc\n')
-#         for lat in lats:
-#             for lon in lons:
-#                 if poly.contains(shp.Point(lon, lat)):
-#                     gdf['distance'] = sqrt((gdf['latitude'] - lat) ** 2 + (gdf['longitude'] - lon) ** 2)
-#                     mindist = min(gdf['distance'].tolist())
-#                     site = gdf.loc[gdf['distance'] == mindist]
-#                     vs30 = site.iloc[0]['Vs30']
-#                     z1pt0 = site.iloc[0]['Z1pt0']
-#                     z2pt5 = site.iloc[0]['Z2pt5']
-#                 else:
-#                     vs30 = 760.
-#                     z1pt0 = -1.
-#                     z2pt5 = -1.
-#                 ostr = f"{lon},{lat},{vs30},{z1pt0},{z2pt5},False,False\n"
-#                 fout.write(ostr)
-#     return
+def vs30_mesh(prefix, lats, lons):
+    '''
+    For the input lats and lons, find the vs30 and write the site file
+    Args:
+    - prefix: prefix to file name
+    - lats: latitudes
+    - lons: longitudes
+    '''
+    poly = getNZborder()
+    # Grid vs30 data
+    gdf = pd.read_csv(f'{os.path.dirname(os.path.abspath(__file__))}/sites/National_grid_1km.csv')
+    # Create the output file
+    with open(f'{prefix}_sites.csv', 'w') as fout:
+        fout.write('lon,lat,vs30,z1pt0,z2pt5,vs30measured,backarc\n')
+        for lat in lats:
+            for lon in lons:
+                if poly.contains(shp.Point(lon, lat)):
+                    gdf['distance'] = sqrt((gdf['latitude'] - lat) ** 2 + (gdf['longitude'] - lon) ** 2)
+                    mindist = min(gdf['distance'].tolist())
+                    site = gdf.loc[gdf['distance'] == mindist]
+                    vs30 = site.iloc[0]['Vs30']
+                    z1pt0 = site.iloc[0]['Z1pt0']
+                    z2pt5 = site.iloc[0]['Z2pt5']
+                else:
+                    vs30 = 760.
+                    z1pt0 = -1.
+                    z2pt5 = -1.
+                ostr = f"{lon},{lat},{vs30},{z1pt0},{z2pt5},False,False\n"
+                fout.write(ostr)
+    return
 
 def mesh_from_bb(dkm, minlat, maxlat, minlon, maxlon):
     '''

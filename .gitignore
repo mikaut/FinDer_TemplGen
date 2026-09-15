@@ -146,3 +146,5 @@ make_fault_specific/event_inis/
 make_fault_specific/site_meshes_old/
 make_fault_specific/averaged_gmms/
 make_fault_specific/event_outputs/
+make_fault_specific/Templates_PGA*
+make_fault_specific/*_*_*.txt

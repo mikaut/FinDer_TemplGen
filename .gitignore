@@ -144,3 +144,5 @@ make_fault_specific/site_meshes/
 tsets.dat
 make_fault_specific/event_inis/
 make_fault_specific/site_meshes_old/
+make_fault_specific/averaged_gmms/
+make_fault_specific/event_outputs/
